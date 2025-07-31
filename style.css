@@ -13,15 +13,39 @@ body {
     display: flex;
     background-color: lightblue;
     padding: 1%;
+    justify-content: space-between;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
 }
 
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+}
+
+nav a:hover{
+    color: palevioletred;
+}
+
 .stats-container {
     display: flex;
+    align-items: center;
 }
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+  }
 
 .stats-card {
     background-color: #a8b0bc;
@@ -34,6 +58,16 @@ body {
 
 #num-contributions, #total-raised, #num-games {
     font-size: 50px;
+}
+
+p{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    padding-top: 50px;
+    text-decoration: wavy;
 }
 
 #games-container {
